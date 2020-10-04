@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>My Resort Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  media="screen and (max-width:868px)"  href="responsive.css">
     </head>
     <body>
         <nav id="navbar">
            <div id="logo">
                <img src="../Img/logo.png" alt="Logo of Resort">
-           </div>
+           </div> 
+
            <ul>
                <li class="item"><a href="#">Home</a></li>
                <li class="item"><a href="#">About us</a></li>
-               <li class="item"><a href="#">Our Resorts</a></li>
+               <li class="item"><a href="#features">Our features</a></li>
                <li class="item"><a href="#">Contact us</a></li>
            </ul>
 
@@ -24,30 +29,65 @@
         <section id="home">
             <h1 class="heading">THE PARADISE INN</h1>
             <p>Sign up now and enjoy luxury like never before</p>
-            
-            
-            <form action="noaction.php">
+            <button class="btn"><a href="#contact" >Sign up</a></button>
+        </section>
+        <br>
+        <br>
+        
+        
+        <section class="features-container">
+            <h1 class="header center">Our Features</h1>
+            <div id="features">
+                <div class="box">
+                    <img src="../Img/rooms.png" alt="hotel room">
+                    <h2 class="header-two center">Lavish rooms</h2>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                
+                <div class="box">
+                    <img src="../Img/rooms.png" alt="hotel room">
+                    <h2 class="header-two center">feature 2</h2>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
 
-                            <div class="form-group">
-                
-                                <input type="text" name="" placeholder="Enter your Name">
-                
-                            </div>
-                
-                
-                            <div class="form-group">
-                
-                                <input type="text" name="" placeholder="Enter your Email Id">
-                
-                            </div>
-                
-                            <div class="form-group">
-                
-                                <input type="text" name="" placeholder="Enter your Phone Number">
-                
-                            </div>  
-                <button class="btn">Sign up</button>
+                <div class="box">
+                    <img src="../Img/rooms.png" alt="hotel room">
+                    <h2 class="header-two center">feature 3</h2>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
 
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="header center">Sign up with us</h1>
+            <div id="sign-up">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text"   placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Email id: </label>
+                        <input type="text" placeholder="Enter your email id">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name"></label>phone number:</label>
+                        <input type="text"  placeholder="Enter your phone number">
+                    </div>
+
+                </form>
+            </div>
         </section>
     </body>
 </html>
+
+
+
+
+
+

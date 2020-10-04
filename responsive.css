@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(248, 247, 187, 0.562);
+}
+#navbar{
+    flex-direction: column;
+
+}
+
+
+#home{
+    height: 915px;
+    padding: 3px 100px;
+
+}
+
+#home::before{
+    height:120% ;
+}
+#features{
+    display: flex;
+    flex-direction: column;
+}
